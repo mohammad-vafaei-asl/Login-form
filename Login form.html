@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود شماره موبایل و کد عددی</title>
+    <script>
+        let phoneNumber;
+        let numericCode;
+
+        function savePhoneNumber() {
+            // دریافت شماره موبایل از input
+            phoneNumber = document.getElementById('phoneInput').value;
+            console.log('شماره موبایل ذخیره شده:', phoneNumber);
+        }
+
+        function saveNumericCode() {
+            // دریافت کد عددی از input
+            numericCode = document.getElementById('codeInput').value;
+            console.log('کد عددی ذخیره شده:', numericCode);
+        }
+    </script>
+</head>
+<body>
+    <h1>لطفا شماره موبایل و کد عددی خود را وارد کنید</h1>
+    
+    <label for="phoneInput">شماره موبایل:</label>
+    <input type="tel" id="phoneInput" placeholder="شماره موبایل خود را وارد کنید" required>
+    <button onclick="savePhoneNumber()">ذخیره شماره</button>
+    
+    <br><br>
+    
+    <label for="codeInput">کد عددی:</label>
+    <input type="number" id="codeInput" placeholder="کد عددی خود را وارد کنید" required>
+    <button onclick="saveNumericCode()">ذخیره کد</button>
+</body>
+</html>
